@@ -1,14 +1,16 @@
 # AIエージェントのブランチ運用ルール
+
 AIエージェントは **main / master ブランチへ直接コミットしてはいけない**
 
 作業開始時に必ず新しいブランチを作成する。
+
 ## ブランチ作成手順
 
 1. main ブランチを最新化する
-git checkout main
-git pull
+   git checkout main
+   git pull
 2. 作業用ブランチを作成する
-git checkout -b <branch-name>
+   git checkout -b <branch-name>
 3. 実装を行う
 4. Conventional Commit 形式でコミット（メッセージは日本語で記述する）
 5. main ブランチへ Pull Request を作成する
@@ -28,11 +30,12 @@ feat/user-login
 fix/login-error  
 docs/readme-update  
 refactor/auth-controller  
-test/login-spec  
+test/login-spec
 
 ---
 
 ## ブランチ作成例
+
 新機能追加の場合
 git checkout main
 git pull
@@ -41,8 +44,11 @@ git checkout -b feat/add-user-profile
 git checkout main
 git pull
 git checkout -b fix/login-validation-error
+
 ---
+
 ## Pull Request フロー
+
 AIエージェントは以下のフローで作業する。
 task  
 ↓  
