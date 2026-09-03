@@ -1,7 +1,7 @@
 # ポケモン図鑑
 
 ## 使用技術（Technology）
-- React
+- React 
 - JavaScript (ES2022)
 - Create React App / react-scripts
 - Prettier（コード整形）
